@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="css/arquivo.css" rel="stylesheet">
+    <link type="text/css" href="css/fonts.css" rel="stylesheet">
+    <title>Code Hero</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <figure>
+                <img src="image/logo.png" alt="Code Hero">
+            </figure>
+        </div>
+        <div class="infos-usuario">
+            <div class="nome-usuario">
+                <span>Pedro Loureiro</span>
+            </div>
+            <div class="titulo-projeto">
+                <span>Teste de Front-end</span>
+            </div>
+            <div class="perfil">
+                <span>CB</span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="conteudo">
+            <div class="div-busca">
+                <div class="titulo">
+                    <span>Busca de personagens</span>
+                </div>
+                <label>Nome do personagem</label>
+                <div class="div-input">
+                    <input id="input-busca" type="text" placeholder="Search">
+                    <svg id="btn-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <defs>
+                            <style>.a{fill:#8e8e8e;}</style>
+                        </defs>
+                        <path class="a" d="M19.665,18.049,14.48,12.864a5.718,5.718,0,1,0-1.616,1.616l5.185,5.185a1.143,1.143,0,1,0,1.616-1.616ZM5.711,9.714a4,4,0,1,1,4,4A4,4,0,0,1,5.711,9.714Z" transform="translate(-4 -4)"/>
+                    </svg>
+                </div>
+                <div class="div-table">
+                    <table id="table-personagem">
+                        <thead>
+                            <tr>
+                                <th>Personagem</th>
+                                <th>Séries</th>
+                                <th>Eventos</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div id="paginate">
+            <div class="controls">
+                <div class="item first">&#171;</div>
+                <div class="item prev"><</div>
+                <div class="numbers">
+                    <div>1</div>
+                </div>
+                <div class="item next">></div>
+                <div class="item last">&#187;</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="js/funcoes.js"></script>
+
+</html>

@@ -1,0 +1,286 @@
+body{
+    --primary-color: #E5E5E5;
+    --secondary-color: #555555;
+    --tertiary-color: #8E8E8E;
+    font-family: 'PTSans';
+    background-color: #fff;
+    color: var(--secondary-color);
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+}
+header .logo figure{
+    margin: 0;
+}
+header .logo figure img{
+    max-width: 200px;
+}
+header .infos-usuario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .infos-usuario .nome-usuario{
+    font-weight: 500;
+    margin-right: 5px;
+}
+header .infos-usuario .perfil{
+    font-weight: 500;
+    padding-left: 30px;
+}
+header .infos-usuario .perfil span{
+    background-color: var(--primary-color);
+    border-radius: 5px;    
+    padding: 8px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+header .infos-usuario .perfil span:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.conteudo{
+    background-color: var(--primary-color);
+    padding: 30px 100px;
+}
+.conteudo.desactive{
+    display: none;
+}
+.detalhes{
+    display: none;
+}
+.detalhes.active{
+    display: block;
+}
+.div-busca .titulo{
+    margin-bottom: 10px;
+}
+.div-busca .titulo span{
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 500;
+}
+.div-busca .div-input{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.div-busca label{
+    font-weight: 500;
+}
+.div-busca .div-input{
+    position: relative;
+    width: max-content;
+}
+.div-busca .div-input input{
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px 10px 10px;
+}
+.div-busca .div-input svg{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+table{
+    margin-top: 15px;
+    border-collapse:separate;
+    border-spacing: 0 15px;
+    width: 100%;
+}
+table th{
+    color: var(--tertiary-color);
+    font-weight: 400;
+    text-align: left;
+    background-color: var(--primary-color);
+    padding: 0 15px;
+}
+#table-personagem th{
+    font-size: 35px;
+    font-weight: 600;
+    color: #1e262d;
+    text-align: center;
+    padding: 0 15px;
+    height: 100px;
+    position: relative;
+}
+#table-personagem th a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: max-content;
+    text-decoration: none;
+    left: 30px;
+    color: #ec7602;
+    letter-spacing: 5px;
+    font-size: 15px;
+    transition: all ease .3s
+    ;
+}
+#table-personagem th a:hover{
+    color: var(--secondary-color);
+}
+#table-personagem tr{
+    justify-content: center;
+    text-align: center;
+}
+#table-personagem tr td{
+    vertical-align: top;
+}
+table tbody {
+    background-color: #fff;
+}
+#table-personagens tbody tr{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #00000033;
+    border-radius: 10px;
+    transition: all ease .3s;
+}
+#table-personagens tbody tr:hover{
+    box-shadow: 0px 0px 5px #000000cf;
+}
+table tbody td{
+    padding: 15px;
+    line-height: 10px;
+}
+#table-personagem tbody tr td .img-span{
+    justify-content: center;
+    flex-direction: column;
+}
+#table-personagem tbody tr td .img-span img{
+    width: 250px;
+}
+#table-personagem tbody tr td .img-span .div-span{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 0;
+}
+table tbody tr td:nth-child(1){
+    border-radius: 10px 0 0 10px;
+}
+table tbody tr td:nth-last-child(1){
+    border-radius: 0 10px 10px 0;
+}
+table tbody tr td:nth-child(1) span{
+    font-weight: 500;
+    margin-left: 15px;
+}
+table tbody td .img-span{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+table tbody tr td a{
+    color: #ec7602;
+    text-decoration: none;
+    width: 100%;
+    transition: all ease .3s;
+}
+table tbody tr td a:hover{
+    color: var(--secondary-color);
+    text-decoration: none;
+    width: 100%;
+}
+table tbody td{
+    padding: 15px;
+    line-height: 15px;
+    width: 33.3%;
+    height: 88px;
+}
+table tbody .titulo{
+    margin-left: 0 !important;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+table tr img{
+    width: 50px;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    .conteudo{
+        text-align: center;
+        padding: 30px;
+    }
+    .div-input{
+        width: 100% !important;
+    }
+    .div-input #input-busca{
+        width: calc(100% - 40px);
+    }
+    table thead tr th:nth-child(2), th:nth-child(3){
+        display: none;
+    }
+    table tbody tr td:nth-child(2), td:nth-child(3){
+        display: none;
+    }
+}
+@media (max-width: 357px) {    
+    header .infos-usuario{
+        justify-content: center;
+    }
+    header .infos-usuario .perfil{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+#paginate {
+    width: 100%;
+    margin: 32px auto;
+}
+#paginate.desactive {
+    display: none;
+}
+#paginate .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+#paginate .controls div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14;
+}
+#paginate .controls div:not(.numbers),
+#paginate .controls div.numbers div{
+    width: 40px;
+    height: 30px;
+    border-radius: 3px;
+}
+#paginate .controls .item{
+    font-weight: 600;
+    transition: all ease .3s;
+}
+#paginate .controls .item:hover{
+    color: #167ABC;
+}
+
+#paginate .controls div.numbers div{
+    background-color: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    margin: 0 5px;
+    transition: all ease .3s;
+}
+#paginate .controls .numbers div:hover {
+    background-color: #5eb0e7;    
+    color: #fff;
+}
+#paginate .controls .numbers div.active {
+    background-color: #167ABC;    
+    color: #fff;
+}
